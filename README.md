@@ -44,6 +44,11 @@
 
 ## 远程仓库的使用
 
+```shell
+git remote add https://github.com/USERNAME/REPOSITORY.git
+git remote add git@github.com:USERNAME/REPOSITORY.git
+```
+
 ## 打标签
 
 ## Git 别名
