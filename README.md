@@ -2,7 +2,7 @@
 
 ## 获取Git 仓库
 
-```console
+```shell
 1. git init
 2. git clone <url>
 ```
@@ -11,7 +11,7 @@
 
 ![](https://git-scm.com/book/en/v2/images/lifecycle.png)
 
-```console
+```shell
 1. 检查当前文件状态
 	git status
 2. 跟踪新文件
@@ -36,11 +36,25 @@
 
 
 
-
-
 ## 查看提交历史
 
+```shell
+git log  按时间先后顺序列出所有的提交
+git log -p -2/  git log -patch -2  显示每次提交所引入的差异
+git log --stat  每次提交的简略统计信息
+```
+
+<img src="figure/git-log-1.png" alt="git-log" style="zoom:50%;" />
+
+<img src="figure/git-log-2.png" alt="git-log" style="zoom:50%;" />
+
 ## 撤销操作
+
+```shell
+git commit --amend
+git reset HEAD <file> 取消暂存的文件
+git checkout -- <file> 撤消对文件的修改
+```
 
 ## 远程仓库的使用
 
